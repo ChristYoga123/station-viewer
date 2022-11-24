@@ -16,4 +16,14 @@ class TrainAndStation extends Model
         'late',
         'delay'
     ];
+
+    public function Station()
+    {
+        return $this->belongsTo(Station::class);
+    }
+
+    public function Train()
+    {
+        return $this->belongsTo(Train::class);
+    }
 }

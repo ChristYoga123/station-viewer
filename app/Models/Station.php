@@ -23,4 +23,9 @@ class Station extends Model
     {
         return $this->hasMany(StationAndFacility::class);
     }
+
+    public function TrainAndStation()
+    {
+        return $this->hasMany(TrainAndStation::class);
+    }
 }
