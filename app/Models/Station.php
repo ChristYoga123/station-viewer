@@ -13,4 +13,9 @@ class Station extends Model
         "name",
         "user_id"
     ];
+
+    public function User()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
